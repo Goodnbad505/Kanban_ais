@@ -1,24 +1,54 @@
-# kanban
+# Kanban Board
 
-## Project setup
-```
+## Project Setup
+
+```sh
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+### Compile and Hot-Reload for Development
+
+```sh
+npm run electron:dev
 ```
 
-### Compiles and minifies for production
+#### OR
+
+```sh
+npm run dev
 ```
+
+```sh
+npm run electron .
+```
+
+### Type-Check, Compile and Minify for Production
+
+```sh
+npm run build:tc
+```
+
+### Build Electron App
+
+```sh
+npm run dist
+```
+
+### Run Unit Tests with [Vitest](https://vitest.dev/)
+
+```sh
+npm run test:unit
+```
+
+### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+
+```sh
 npm run build
+npm run test:e2e # or `npm run test:e2e:ci` for headless testing
 ```
 
-### Lints and fixes files
-```
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
