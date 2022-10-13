@@ -2,7 +2,6 @@
 import { ref, onBeforeMount, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import colors from "./assets/colors.json";
-import TitleBar from "./components/title-bar.vue";
 
 const router = useRouter();
 const barItems = ref([
@@ -55,7 +54,7 @@ onBeforeMount(() => {
 <template>
   <TitleBar
     :items="$route.name !== 'task' ? barItems : []"
-    title="Task manager"
+    title="Kanban Board"
   />
   <RouterView />
 </template>
